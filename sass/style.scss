@@ -2,7 +2,7 @@
 
 //VARS
 $mobile-breakpoint: 375px;
-$desktop-breakpoint: 1439px;
+$desktop-breakpoint: 1425px;
 
 $dark-gray: hsl(0, 0%, 63%);
 $black: hsl(0, 0%, 0%);
@@ -109,7 +109,7 @@ nav {
             }
         }
 
-        @media only screen  and (max-width: 1439px) {
+        @media only screen  and (max-width: 1425px) {
             display: none;
         }
     }
@@ -134,7 +134,7 @@ nav {
 }
 
 .row-1 {
-    @media only screen  and (min-width: 1439px) {
+    @media only screen  and (min-width: 1425px) {
         height: calc( 70vh - 29px );
     }
 }
@@ -146,7 +146,7 @@ header {
     flex: 2 1 835px;
     z-index: 1;
 
-    @media only screen  and (min-width: 1439px) {
+    @media only screen  and (min-width: 1425px) {
         height: 100%;
     }
 
@@ -156,7 +156,7 @@ header {
         transform: translate(-10%, -40%);
         z-index: 1;
 
-        @media only screen  and (min-width: 1439px) {
+        @media only screen  and (min-width: 1425px) {
             display: none;
         }
     }
@@ -168,7 +168,7 @@ header {
         transform: translate(-50%, -40%);
         z-index: 1;
 
-        @media only screen  and (min-width: 1439px) {
+        @media only screen  and (min-width: 1425px) {
             display: none;
         }
     }
@@ -200,7 +200,7 @@ header {
             background-image: url(../images/mobile-image-hero-3.jpg);
         }
 
-        @media only screen  and (min-width: 1439px) {
+        @media only screen  and (min-width: 1425px) {
             height: 100%;
 
             &#item-1 {
@@ -249,7 +249,7 @@ header {
         }
     }
 
-    @media only screen and (min-width: 1439px) {
+    @media only screen and (min-width: 1425px) {
         right: -190px;
         width: 190px;
         height: 90px;
@@ -307,7 +307,7 @@ header {
 
     }
 
-    @media only screen  and (min-width: 1439px) {
+    @media only screen  and (min-width: 1425px) {
         height: 100%;
         padding: 120px 100px;
 
@@ -327,7 +327,7 @@ header {
         background-repeat: no-repeat;
         flex: 1 1 415px;
 
-        @media only screen  and (min-width: 1439px) {
+        @media only screen  and (min-width: 1425px) {
             height: auto;
         }
     }
@@ -351,7 +351,7 @@ header {
             text-transform: uppercase;
             letter-spacing: 0.5em;
 
-            @media only screen and (min-width: 1439px) {
+            @media only screen and (min-width: 1425px) {
                 font-size: $body-copy-size;
             }
         }
