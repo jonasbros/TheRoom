@@ -84,7 +84,7 @@ nav.desktop-nav ul li {
 nav.desktop-nav ul a {
   color: white;
 }
-@media only screen and (max-width: 1439px) {
+@media only screen and (max-width: 1425px) {
   nav.desktop-nav {
     display: none;
   }
@@ -104,7 +104,7 @@ nav.desktop-nav ul a {
   flex-flow: row wrap;
 }
 
-@media only screen and (min-width: 1439px) {
+@media only screen and (min-width: 1425px) {
   .row-1 {
     height: calc( 70vh - 29px );
   }
@@ -117,7 +117,7 @@ header {
   flex: 2 1 835px;
   z-index: 1;
 }
-@media only screen and (min-width: 1439px) {
+@media only screen and (min-width: 1425px) {
   header {
     height: 100%;
   }
@@ -128,7 +128,7 @@ header .hamburger {
   transform: translate(-10%, -40%);
   z-index: 1;
 }
-@media only screen and (min-width: 1439px) {
+@media only screen and (min-width: 1425px) {
   header .hamburger {
     display: none;
   }
@@ -140,7 +140,7 @@ header .mobile-logo {
   transform: translate(-50%, -40%);
   z-index: 1;
 }
-@media only screen and (min-width: 1439px) {
+@media only screen and (min-width: 1425px) {
   header .mobile-logo {
     display: none;
   }
@@ -167,7 +167,7 @@ header .hero-item#item-2 {
 header .hero-item#item-3 {
   background-image: url(../images/mobile-image-hero-3.jpg);
 }
-@media only screen and (min-width: 1439px) {
+@media only screen and (min-width: 1425px) {
   header .hero-item {
     height: 100%;
   }
@@ -211,7 +211,7 @@ header .hero-item#item-3 {
 .hero-controls .hero-control::after {
   display: none;
 }
-@media only screen and (min-width: 1439px) {
+@media only screen and (min-width: 1425px) {
   .hero-controls {
     right: -190px;
     width: 190px;
@@ -260,7 +260,7 @@ header .hero-item#item-3 {
 .header-copy a:hover svg {
   fill: #a1a1a1;
 }
-@media only screen and (min-width: 1439px) {
+@media only screen and (min-width: 1425px) {
   .header-copy {
     height: 100%;
     padding: 120px 100px;
@@ -278,7 +278,7 @@ header .hero-item#item-3 {
   background-repeat: no-repeat;
   flex: 1 1 415px;
 }
-@media only screen and (min-width: 1439px) {
+@media only screen and (min-width: 1425px) {
   .row-2 .about-1, .row-2 .about-3 {
     height: auto;
   }
@@ -300,7 +300,7 @@ header .hero-item#item-3 {
   text-transform: uppercase;
   letter-spacing: 0.5em;
 }
-@media only screen and (min-width: 1439px) {
+@media only screen and (min-width: 1425px) {
   .row-2 .about-2 h2 {
     font-size: 0.75em;
   }
