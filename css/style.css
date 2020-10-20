@@ -114,7 +114,7 @@ header {
   position: relative;
   height: 360px;
   width: 375px;
-  flex: 2 1 835px;
+  flex: 2 1 810px;
   z-index: 1;
 }
 @media only screen and (min-width: 1425px) {
@@ -158,26 +158,26 @@ header .hero-item {
   background-position: center;
   background-repeat: no-repeat;
 }
-header .hero-item#item-1 {
+header .hero-item.item-1 {
   background-image: url(../images/mobile-image-hero-1.jpg);
 }
-header .hero-item#item-2 {
+header .hero-item.item-2 {
   background-image: url(../images/mobile-image-hero-2.jpg);
 }
-header .hero-item#item-3 {
+header .hero-item.item-3 {
   background-image: url(../images/mobile-image-hero-3.jpg);
 }
 @media only screen and (min-width: 1425px) {
   header .hero-item {
     height: 100%;
   }
-  header .hero-item#item-1 {
+  header .hero-item.item-1 {
     background-image: url(../images/desktop-image-hero-1.jpg);
   }
-  header .hero-item#item-2 {
+  header .hero-item.item-2 {
     background-image: url(../images/desktop-image-hero-2.jpg);
   }
-  header .hero-item#item-3 {
+  header .hero-item.item-3 {
     background-image: url(../images/desktop-image-hero-3.jpg);
   }
 }
@@ -231,7 +231,7 @@ header .hero-item#item-3 {
   padding: 70px 30px;
   height: auto;
   width: 375px;
-  flex: 1 1 605px;
+  flex: 1 1 590px;
   z-index: 0;
 }
 .header-copy h1 {
@@ -276,7 +276,7 @@ header .hero-item#item-3 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  flex: 1 1 415px;
+  flex: 1 1 407.5px;
 }
 @media only screen and (min-width: 1425px) {
   .row-2 .about-1, .row-2 .about-3 {

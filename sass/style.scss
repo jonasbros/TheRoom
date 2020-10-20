@@ -143,7 +143,7 @@ header {
     position: relative;
     height: 360px;
     width: 375px;
-    flex: 2 1 835px;
+    flex: 2 1 810px;
     z-index: 1;
 
     @media only screen  and (min-width: 1425px) {
@@ -188,30 +188,30 @@ header {
         background-position: center;
         background-repeat: no-repeat;
 
-        &#item-1 {
+        &.item-1 {
             background-image: url(../images/mobile-image-hero-1.jpg);
         }
 
-        &#item-2 {
+        &.item-2 {
             background-image: url(../images/mobile-image-hero-2.jpg);
         }
 
-        &#item-3 {
+        &.item-3 {
             background-image: url(../images/mobile-image-hero-3.jpg);
         }
 
         @media only screen  and (min-width: 1425px) {
             height: 100%;
 
-            &#item-1 {
+            &.item-1 {
                 background-image: url(../images/desktop-image-hero-1.jpg);
             }
     
-            &#item-2 {
+            &.item-2 {
                 background-image: url(../images/desktop-image-hero-2.jpg);
             }
     
-            &#item-3 {
+            &.item-3 {
                 background-image: url(../images/desktop-image-hero-3.jpg);
             }
         }
@@ -271,7 +271,7 @@ header {
     padding: 70px 30px;
     height: auto;
     width: 375px;
-    flex: 1 1 605px;
+    flex: 1 1 590px;
     z-index: 0;
 
     h1 {
@@ -325,7 +325,7 @@ header {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        flex: 1 1 415px;
+        flex: 1 1 407.5px;
 
         @media only screen  and (min-width: 1425px) {
             height: auto;
