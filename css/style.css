@@ -81,6 +81,9 @@ nav.desktop-nav ul img {
 nav.desktop-nav ul li {
   vertical-align: middle;
 }
+nav.desktop-nav ul li:first-of-type {
+  margin: 0;
+}
 nav.desktop-nav ul a {
   color: white;
 }

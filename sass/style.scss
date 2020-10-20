@@ -102,6 +102,10 @@ nav {
 
             li {
                 vertical-align: middle;
+
+                &:first-of-type {
+                    margin: 0;
+                }
             }
 
             a {
