@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Room</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">    
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <input type="checkbox" id="menu-toggler">
+    <nav class="mobile-nav">
+        <label for="menu-toggler">
+            <img class="close-btn" src="images/icon-close.svg" alt="Menu close button">
+        </label>
+
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+        <div class="mobile-menu-overlay"></div>        
+    </nav>
+
+    <nav class="desktop-nav">
+        <ul>
+            <img class="desktop-logo" src="images/logo.svg" alt="You're tearing me apart, Lisa!"> 
+
+            <li><a href="#">home</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+        <div class="mobile-menu-overlay"></div>        
+    </nav>
+
+    <main>
+        <section class="row-1">
+            <header> 
+                <div class="hero-controls">
+                    <div class="hero-control left swiper-button-prev"><img src="images/icon-angle-left.svg" alt="Left control"></div>
+                    <div class="hero-control right swiper-button-next"><img src="images/icon-angle-right.svg" alt="Right control"></div>
+                </div>
+
+                <div class="hamburger">
+                    <label for="menu-toggler">
+                        <img src="images/icon-hamburger.svg" alt="Hamburger menu">
+                    </label>
+                </div>
+    
+                <img class="mobile-logo" src="images/logo.svg" alt="You're tearing me apart, Lisa!"> 
+                
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="hero-item swiper-slide" id="item-1" aria-label="Nice chair with bonsai on table"></div>
+                        <div class="hero-item swiper-slide" id="item-2" aria-label="Three nice chairs"></div>
+                        <div class="hero-item swiper-slide" id="item-3" aria-label="One nice chair but with padding"></div>
+                    </div>
+                </div>
+
+            </header>
+
+            <div class="header-copy">
+                <h1>Discover innovative ways to decorate</h1>
+                <p>We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form andnfunction in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
+
+                <a href="#">Shop now <svg aria-label="Shop now arrow" width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill-rule="nonzero"/></svg></a>
+            </div>
+        </section>
+        
+        <section class="row-2">
+            <div class="about-1" aria-label="Edgy coffee table"></div>
+            <div class="about-2">
+                <h2>About our furniture</h2>
+                <p>Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.</p>
+            </div>
+            <div class="about-3" aria-label="Hipster white chair"></div>
+        </section>
+    </main>    
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

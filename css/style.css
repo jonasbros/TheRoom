@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Spartan", sans-serif;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  padding: 25px 1em;
+  transition: opacity 450ms ease;
+}
+nav ul {
+  width: 80%;
+  text-align: right;
+  margin-left: auto;
+  padding: 17px 0;
+}
+nav ul li {
+  display: inline-block;
+  font-family: "Spartan", sans-serif;
+  font-size: 0.75em;
+  font-weight: 700;
+  margin: 0 1em;
+}
+nav ul li a {
+  color: black;
+}
+nav.mobile-nav {
+  opacity: 0;
+  pointer-events: none;
+  background: white;
+}
+nav.mobile-nav ul {
+  width: 80%;
+  text-align: right;
+  margin-left: auto;
+  padding: 17px 0;
+}
+nav.mobile-nav ul li {
+  display: inline-block;
+  font-family: "Spartan", sans-serif;
+  font-size: 0.75em;
+  font-weight: 700;
+  margin: 0 1em;
+}
+nav.mobile-nav ul li a {
+  color: black;
+}
+nav.mobile-nav .close-btn {
+  position: absolute;
+  margin: 25px auto auto 1em;
+  transform: translateY(-50%);
+}
+nav.mobile-nav .mobile-menu-overlay {
+  position: fixed;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+nav.desktop-nav {
+  display: block;
+  padding: 45px 34px;
+  z-index: 2;
+}
+nav.desktop-nav ul {
+  margin: 0 auto 0 30px;
+  text-align: left;
+}
+nav.desktop-nav ul img {
+  vertical-align: middle;
+  margin-right: 50px;
+}
+nav.desktop-nav ul li {
+  vertical-align: middle;
+}
+nav.desktop-nav ul a {
+  color: white;
+}
+@media only screen and (max-width: 1439px) {
+  nav.desktop-nav {
+    display: none;
+  }
+}
+
+#menu-toggler {
+  display: none;
+}
+#menu-toggler:checked ~ nav {
+  opacity: 1;
+  pointer-events: all;
+  z-index: 2;
+}
+
+.row-1, .row-2 {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@media only screen and (min-width: 1439px) {
+  .row-1 {
+    height: calc( 70vh - 29px );
+  }
+}
+
+header {
+  position: relative;
+  height: 360px;
+  width: 375px;
+  flex: 2 1 835px;
+  z-index: 1;
+}
+@media only screen and (min-width: 1439px) {
+  header {
+    height: 100%;
+  }
+}
+header .hamburger {
+  position: fixed;
+  margin: 50px auto auto 2em;
+  transform: translate(-10%, -40%);
+  z-index: 1;
+}
+@media only screen and (min-width: 1439px) {
+  header .hamburger {
+    display: none;
+  }
+}
+header .mobile-logo {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  z-index: 1;
+}
+@media only screen and (min-width: 1439px) {
+  header .mobile-logo {
+    display: none;
+  }
+}
+header .swiper-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+header .hero-item {
+  height: 360px;
+  width: 100%;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header .hero-item#item-1 {
+  background-image: url(../images/mobile-image-hero-1.jpg);
+}
+header .hero-item#item-2 {
+  background-image: url(../images/mobile-image-hero-2.jpg);
+}
+header .hero-item#item-3 {
+  background-image: url(../images/mobile-image-hero-3.jpg);
+}
+@media only screen and (min-width: 1439px) {
+  header .hero-item {
+    height: 100%;
+  }
+  header .hero-item#item-1 {
+    background-image: url(../images/desktop-image-hero-1.jpg);
+  }
+  header .hero-item#item-2 {
+    background-image: url(../images/desktop-image-hero-2.jpg);
+  }
+  header .hero-item#item-3 {
+    background-image: url(../images/desktop-image-hero-3.jpg);
+  }
+}
+
+.hero-controls {
+  display: flex;
+  position: absolute;
+  flex-flow: row nowrap;
+  width: 100px;
+  height: 50px;
+  right: 0;
+  background: black;
+  bottom: 0;
+  z-index: 1;
+}
+.hero-controls .hero-control {
+  display: inline-block;
+  position: relative;
+  padding: 11.5px 18px;
+  margin: 0;
+  top: auto;
+  left: auto;
+  right: auto;
+  width: auto;
+  height: auto;
+  outline: none;
+}
+.hero-controls .hero-control:hover {
+  background: #454545;
+}
+.hero-controls .hero-control::after {
+  display: none;
+}
+@media only screen and (min-width: 1439px) {
+  .hero-controls {
+    right: -190px;
+    width: 190px;
+    height: 90px;
+  }
+  .hero-controls .hero-control {
+    padding: 29px 38px;
+  }
+  .hero-controls .hero-control img {
+    height: 29px;
+    width: 19px;
+  }
+}
+
+.header-copy {
+  position: relative;
+  padding: 70px 30px;
+  height: auto;
+  width: 375px;
+  flex: 1 1 605px;
+  z-index: 0;
+}
+.header-copy h1 {
+  margin-bottom: 1em;
+  color: black;
+}
+.header-copy p {
+  margin-bottom: 3.5em;
+  line-height: 1.6em;
+  font-size: 0.75em;
+  color: #a1a1a1;
+}
+.header-copy a {
+  font-size: 0.75em;
+  font-weight: 600;
+  letter-spacing: 1em;
+  text-transform: uppercase;
+  color: black;
+}
+.header-copy a svg {
+  fill: black;
+}
+.header-copy a:hover {
+  color: #a1a1a1;
+}
+.header-copy a:hover svg {
+  fill: #a1a1a1;
+}
+@media only screen and (min-width: 1439px) {
+  .header-copy {
+    height: 100%;
+    padding: 120px 100px;
+  }
+  .header-copy h1 {
+    font-size: 2.35em;
+  }
+}
+
+.row-2 .about-1, .row-2 .about-3 {
+  height: 266px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1 1 415px;
+}
+@media only screen and (min-width: 1439px) {
+  .row-2 .about-1, .row-2 .about-3 {
+    height: auto;
+  }
+}
+.row-2 .about-1 {
+  background-image: url(../images/image-about-dark.jpg);
+}
+.row-2 .about-3 {
+  background-image: url(../images/image-about-light.jpg);
+}
+.row-2 .about-2 {
+  padding: 74px 40px;
+  flex: 2 1 610px;
+}
+.row-2 .about-2 h2 {
+  font-size: 0.75em;
+  font-weight: 700;
+  margin-bottom: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+@media only screen and (min-width: 1439px) {
+  .row-2 .about-2 h2 {
+    font-size: 0.75em;
+  }
+}
+.row-2 .about-2 p {
+  line-height: 1.6em;
+  color: #a1a1a1;
+  font-size: 0.75em;
+}
+
+/*# sourceMappingURL=style.css.map */
